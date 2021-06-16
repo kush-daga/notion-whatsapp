@@ -1,0 +1,31 @@
+{
+  "name": "notion-whatsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"ts-node-dev --respawn --pretty --transpile-only src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kush-daga/notion-whatsapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kush-daga/notion-whatsapp/issues"
+  },
+  "homepage": "https://github.com/kush-daga/notion-whatsapp#readme",
+  "dependencies": {
+    "@notionhq/client": "^0.1.9",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^15.12.2",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  }
+}
