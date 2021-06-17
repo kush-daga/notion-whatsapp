@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"ts-node-dev --respawn --pretty --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,14 @@
   "homepage": "https://github.com/kush-daga/notion-whatsapp#readme",
   "dependencies": {
     "@notionhq/client": "^0.1.9",
-    "dotenv": "^10.0.0"
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "twilio": "^3.64.0"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.12",
     "@types/node": "^15.12.2",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.3.2"
