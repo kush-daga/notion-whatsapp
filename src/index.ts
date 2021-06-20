@@ -2,6 +2,7 @@ require("dotenv").config();
 import { Client, LogLevel } from "@notionhq/client";
 
 const apiToken: string = process.env.NOTION_API_SECRET || "";
+//auth can be access token from db too!
 const notion = new Client({
 	auth: apiToken,
 	logLevel: LogLevel.DEBUG,
@@ -103,6 +104,8 @@ app.post("/sms", async (req, res) => {
 	if (req.body.Body) {
 		await addToNotion(req.body.Body);
 	}
+	res.writeHead(200, { "Content-Type": "text/xml" });
+	res.end();
 });
 
 http.createServer(app).listen(1337, () => {
